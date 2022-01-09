@@ -7,15 +7,16 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
+// removed GlobalState for redux
 import { Provider } from 'react-redux';
-
+// import new store.js that replaced GlobalState
+import Store from './utils/store';
 import Home from './pages/Home';
 import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Nav from './components/Nav';
-import Store from './utils/store';
 import Success from './pages/Success';
 import OrderHistory from './pages/OrderHistory';
 
@@ -43,7 +44,8 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-          <StoreProvider>
+          {/* removed <StoreProvider> for <Provider> for store*/}
+          <Provider store={store}>
             <Nav />
             <Switch>
               <Route exact path="/" component={Home} />
@@ -54,7 +56,7 @@ function App() {
               <Route exact path="/products/:id" component={Detail} />
               <Route component={NoMatch} />
             </Switch>
-          </StoreProvider>
+          </Provider>
         </div>
       </Router>
     </ApolloProvider>
