@@ -10,7 +10,7 @@ import { setContext } from '@apollo/client/link/context';
 // removed GlobalState for redux
 import { Provider } from 'react-redux';
 // import new store.js that replaced GlobalState
-import Store from './utils/store';
+import store from './utils/store';
 import Home from './pages/Home';
 import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
