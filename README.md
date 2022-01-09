@@ -65,13 +65,13 @@ The technologies used to create this program were:
 Logged Out Shop
 ```
 
-![Screenshot](assets/images/loggedinshop.png)
+![Screenshot](assets/images/loggedoutshop.png)
 
 ```
 Logged In Shop
 ```
 
-![Screenshot](assets/images/loggedoutshop.png)
+![Screenshot](assets/images/loggedinshop.png)
 
 <br>
 
