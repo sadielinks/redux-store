@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# MERN Redux Store (Bootcamp Assignment 22 - State)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+By: Sadie Sial
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+![mit](https://img.shields.io/badge/license-MIT-lightblue)
 
-### `npm start`
+#### Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Description](#description)
+- [Technologies](#technologies)
+- [Screenshots](#screenshots)
+- [Links](#links)
+- [Contact](#contact)
+- [License](#license)
+  <br><br>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Description <br>
 
-### `npm test`
+This web-based application allows for users to search and purchase items using MERN technology.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### User Story:
 
-### `npm run build`
+```
+AS a senior engineer working on an e-commerce platform
+I WANT my platform to use Redux to manage global state instead of the Context API
+SO THAT my website's state management is taken out of the React ecosystem
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+GIVEN an e-commerce platform that uses Redux to manage global state
+WHEN I review the app’s store
+THEN I find that the app uses a Redux store instead of the Context API
+WHEN I review the way the React front end accesses the store
+THEN I find that the app uses a Redux provider
+WHEN I review the way the app determines changes to its global state
+THEN I find that the app passes reducers to a Redux store instead of using the Context API
+WHEN I review the way the app extracts state data from the store
+THEN I find that the app uses Redux instead of the Context API
+WHEN I review the way the app dispatches actions
+THEN I find that the app uses Redux instead of the Context API
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Technologies
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The technologies used to create this program were:
 
-### `npm run eject`
+- HTML + CSS
+- Javascript
+- NodeJS
+- ExpressJS
+- MongoDB
+- Mongo Atlas
+- Apollo
+- GraphQL
+- Redux
+- Heroku
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
 
-## Learn More
+![Screenshot](assets/images/home-out.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
 
-### Code Splitting
+![Screenshot](assets/images/home-in.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
 
-### Analyzing the Bundle Size
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Screenshot](assets/images/loggedout.png)
 
-### Making a Progressive Web App
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```
 
-### Advanced Configuration
+![Screenshot](assets/images/loggedin.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<br>
 
-### Deployment
+## Links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- [Deployed App on Heroku](https://redux-store-sns.herokuapp.com/)
 
-### `npm run build` fails to minify
+- [GitHub Repository](https://github.com/sadielinks/redux-store)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<br>
+
+## Contact
+
+- [GitHub Profile](https://github.com/sadielinks)
+- [Portfolio](https://sadielinks.github.io/professional-portfolio/)
+- [Email](mailto:sadiecodes@gmail.com)
+
+<br>
+
+## License
+
+This source code is available to everyone under the standard [MIT license ©](https://choosealicense.com/licenses/mit/) <br><br>
+© 2021 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
