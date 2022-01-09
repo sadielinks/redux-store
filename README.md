@@ -62,28 +62,16 @@ The technologies used to create this program were:
 ## Screenshots
 
 ```
-
+Logged Out Shop
 ```
 
-![Screenshot](assets/images/home-out.png)
+![Screenshot](assets/images/loggedinshop.png)
 
 ```
-
+Logged In Shop
 ```
 
-![Screenshot](assets/images/home-in.png)
-
-```
-
-```
-
-![Screenshot](assets/images/loggedout.png)
-
-```
-
-```
-
-![Screenshot](assets/images/loggedin.png)
+![Screenshot](assets/images/loggedoutshop.png)
 
 <br>
 
