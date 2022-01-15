@@ -5,26 +5,33 @@ import { QUERY_CHECKOUT } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
-// removed useStoreContext from deleted GlobalState.js
+// import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 import './style.css';
-// import redux
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch, useSelector  } from 'react-redux';
 
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
 
 const Cart = () => {
-  // removed GlobalState() for redux state
-  const state = useSelector(state => state);
+  // const [state, dispatch] = useStoreContext();
+  const state = useSelector((state) => state);
   const dispatch = useDispatch();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
 
   useEffect(() => {
+    if (data) {
+      stripePromise.then((res) => {
+        res.redirectToCheckout({ sessionId: data.checkout.session });
+      });
+    }
+  }, [data]);
+
+  useEffect(() => {
     async function getCart() {
       const cart = await idbPromise('cart', 'get');
-      // use array of saved items
       dispatch({ type: ADD_MULTIPLE_TO_CART, products: [...cart] });
-    };
+    }
+
     if (!state.cart.length) {
       getCart();
     }
